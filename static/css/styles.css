@@ -54,7 +54,8 @@ h1, h2, h3, h4, h5, h6, .header-font {
 .header-block-large {
     background-color: var(--primary-red);
     display: flex;
-    padding: 5rem;
+    margin: auto;
+    padding: 5rem 0 5rem 0;
 }
 .header-block-large div, img {
     margin: auto;
