@@ -5,51 +5,88 @@
 
     <div class="container">
         <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-xl-3">
-            <div class="col meg-center margined-small no-padded-top" style="width: 500px;background: #f7f6f6;min-width: 45%;max-width: 90%;">
+            <div class="col flex-box meg-center margined-small no-padded-top">
                 <div>
-                    <div class="py-4">
+                    <div class="py-4 card margined-small padded">
                         <h4>Tuition Validation</h4><small>Python/C++</small>
-                        <p>I wrote a program in C++ to automate the tuition validation process for over 42,000 students and over half a billion dollars at the University of North Texas for the Student Accounting office. <br><br>It reads in student data, and using settings files, it determines how much each student should be receiving for a charge, if any. One settings file lists the restrictions for each charge using pseudocode to determine the conditions to receive it, and a second settings file lists the restrictions for each amount and how much per credit hour the amount costs as well as its cap. The original version was written in C++, but all of the settings were hardcoded. It was later rewritten in Python using dictionaries to store the data using external settings files, so no code needs to be changed when updating the settings.&nbsp;<br><br>For my work on this project, I received the Outstanding Student Employee of the Year award in 2022 from UNT.&nbsp;</p>
+                        <p>Written in C++, this program automated the tuition validation process for over 42,000 
+                            students and over half a billion dollars at the University of North Texas for the 
+                            Student Accounting office. <br><br>It reads in student data, and using settings files, 
+                            it determines how much each student should be receiving for a charge, if any. One 
+                            settings file lists the restrictions for each charge using pseudocode to determine 
+                            the conditions to receive it, and a second settings file lists the restrictions for 
+                            each amount and how much per credit hour the amount costs as well as its cap. The 
+                            original version was written in C++, but all of the settings were hardcoded. It was 
+                            later rewritten in Python using dictionaries to store the data using external settings 
+                            files, so no code needs to be changed when updating the settings. 
+                            &nbsp;<br><br>
+                            For my work on this project, I received the Outstanding Student Employee of the Year 
+                            award in 2022 from UNT.&nbsp;</p>
                     </div>
                 </div>
             </div>
-            <div class="col meg-center margined-small no-padded-top" style="width: 500px;background: #f7f6f6;min-width: 45%;max-width: 90%;">
+            <div class="col flex-box meg-center margined-small no-padded-top">
                 <div>
-                    <div class="py-4">
-                        <h4>Payment Plan Estimator<a href="#" style="color: rgb(0,0,0);"><img src="{{ url_for('static', filename='assets/github.png') }}" class="icon-small" style="padding-left: 7px;"></i></a></h4><small>Python</small>
+                    <div class="py-4 card margined-small padded">
+                        <h4>Wikipedia Clone<a href="https://github.com/meganmcadams/Discord-Verification-Bot" style="color: rgb(0,0,0);" target="_blank"><img src="{{ url_for('static', filename='assets/github.png') }}" class="icon-small" style="padding-left: 7px;"></i></a></h4><small>Python/HTML/CSS/JavaScript</small>
+                        <p>Using Python Flask for the framework, the Wikipedia clone project allows users to create an account and
+                            log in, create and edit pages, and navigate pages through the navbar, which autopopulates with newly
+                            added pages. When a user creates a page, they can link other pages and use basic HTML functions such as 
+                            bolding and italicising using special pre-defined symbols. These symbols are parsed through after the user
+                            publishes the page, and they are translated to HTML. This is to prevent the user from using pure HTML and 
+                            being able to inject harmful HTML into the website. <br></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col flex-box meg-center margined-small no-padded-top">
+                <div>
+                    <div class="py-4 card margined-small padded">
+                        <h4>Payment Plan Estimator</h4><small>Python</small>
                         <p>I wrote a program in Python to estimate the division of a student's total tuition &amp; fees for the semester across three installments with three different payment plan options: Short Term Loan, Installment Plan, and Installment Plan STB (with no down payment). This program has a functioning GUI to make it easier for the employees at Student Accounting to use. The GUI was built using PySimpleGUI.&nbsp;<br><br>It reads in the student's total due charges and their anticipated aid (financial aid that has yet to disperse), reads in which payment plan the user would like to make an estimate for, subtracts the down payment (if any), and divides the remaining charges across the three payment deadlines. The anticipated aid is subtracted starting with the first installment and rolls over to other installments, as it doesn't evenly divide amongst the installments.&nbsp;<br><br>Previous to this program, there was not an accurate way to estimate how installments would be broken up with anticipated aid for the Student Accounting office at UNT. Despite the simplicity of the program, it was used very often for students until we switched to a different payment plan method.</p>
                     </div>
                 </div>
             </div>
-            <div class="col meg-center margined-small no-padded-top" style="width: 500px;background: #f7f6f6;min-width: 45%;max-width: 90%;">
+            <div class="col flex-box meg-center margined-small no-padded-top">
                 <div>
-                    <div class="py-4">
-                        <h4>Tik Tak Toe<a href="https://github.com/meganmcadams/tik-tac-toe" style="color: rgb(0,0,0);" target="_blank"><img src="{{ url_for('static', filename='assets/github.png') }}" class="icon-small" style="padding-left: 7px;"></i></a></h4><small>Python</small>
-                        <p>When first learning Python, I made a simple Tik Tak Toe game using a list with each of the board slots and a list to hold each of the available slots. <br><br>The user can choose whether or not they want to go first and whether they are X's or O's, and when it is their turn, a board with numbers in the available slots is printed. The user types in a number, and their character (X or O) populates the slot. The bot picks a random available slot to occupy during its turn. A check is run at the end of each turn to determine whether or not there was a winner, and if so, who. The winner is stored in a save file so that the bot may react to seeing the same person again after the user reloads the program.<br></p>
+                    <div class="py-4 card margined-small padded">
+                        <h4>Balanced BST Dictionary<a href="https://github.com/meganmcadams/tik-tac-toe" style="color: rgb(0,0,0);" target="_blank"><img src="{{ url_for('static', filename='assets/github.png') }}" class="icon-small" style="padding-left: 7px;"></i></a></h4><small>Java</small>
+                        <p>
+                            To learn Java, I created a program that reads from a text file a list of 
+                            reptiles and their features, and stores them in a dictionary using a balanced 
+                            binary search tree implementation. When the user searches for a reptile, it 
+                            performs a search using the binary search tree to return the result in O(log n) 
+                            time. In addition to the search feature, the user can delete a node from the
+                            tree, which will cause the tree to rebalance to maintain its O(log n) time
+                            complexity. 
+                        <br></p>
                     </div>
                 </div>
             </div>
-            <div class="col meg-center margined-small no-padded-top" style="width: 500px;background: #f7f6f6;min-width: 45%;max-width: 90%;">
+            <div class="col flex-box meg-center margined-small no-padded-top">
                 <div>
-                    <div class="py-4">
+                    <div class="py-4 card margined-small padded">
                         <h4>Pokémon Battle Simulator<a href="https://github.com/meganmcadams/Pokemon-Battle-Simulator" style="color: rgb(0,0,0);" target="_blank"><img src="{{ url_for('static', filename='assets/github.png') }}" class="icon-small" style="padding-left: 7px;"></i></a></h4><small>Python</small>
-                        <p>For a project in Data Structures &amp; Algorithms, I created a&nbsp;Pokémon battle simulator. It has several features, including the base battle simulator, experience points and money rewards allocator (for after winning a battle), adding/removing/updating information about stored&nbsp;Pokémon and trainers, and more.<br></p>
+                        <p>For a project in Data Structures and Algorithms, I created a Pokémon battle simulator. 
+                            It has several features, including the base battle simulator, experience points and 
+                            money rewards allocator (for after winning a battle), adding/removing/updating information 
+                            about stored Pokémon and trainers, and more. <br></p>
                     </div>
                 </div>
             </div>
-            <div class="col meg-center margined-small no-padded-top" style="width: 500px;background: #f7f6f6;min-width: 45%;max-width: 90%;">
+            <div class="col flex-box meg-center margined-small no-padded-top">
                 <div>
-                    <div class="py-4">
-                        <h4>Discord Validation Bot<a href="https://github.com/meganmcadams/Discord-Verification-Bot" style="color: rgb(0,0,0);" target="_blank"><img src="{{ url_for('static', filename='assets/github.png') }}" class="icon-small" style="padding-left: 7px;"></i></a></h4><small>JavaScript</small>
-                        <p>For my clubs' communication channels in Discord, I coded a bot to handle the verification of users. It is a UNT policy that official communication channels must have each member's name set to their first and last name, so I set up the channels so that when you first join, you are locked in the #verification channel until you obtain the @Verified role.&nbsp;<br><br>The bot works by waiting for a checkmark reaction to the instructions for updating your nickname in the #verification channel, and it then compares the user's nickname (or username if no nickname is set) to a regular expression (^[A-Z][a-z]*+(([']?|[ ]?|[-]?)[A-z])*[ ][A-Z]([-][A-Z])?$) that checks if the user's nickname is a first name followed by a last initial. If it does not match, it messages the user explaining that they did not update their nickname accordingly and returns. If it does match, it gives the user the @Verified role and messages them with a success message.<br></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col meg-center margined-small no-padded-top" style="width: 500px;background: #f7f6f6;min-width: 45%;max-width: 90%;">
-                <div>
-                    <div class="py-4">
-                        <h4>Club Website<a href="https://github.com/meganmcadams/website" style="color: rgb(0,0,0);" target="_blank"><img src="{{ url_for('static', filename='assets/github.png') }}" class="icon-small" style="padding-left: 7px;"></i></a></h4><small>HTML/CSS</small>
-                        <p>While learning HTML and CSS, I created a website from scratch for practice. The website is for UNT Critical Hit, a club I founded in 2021. This website was not published, as it was not made to be the final product, but it was coded entirely from scratch without the use of Bootstrap. The website has a home, officers, and contact page, which displays basic information about the club, lists the officers and their biographies, and provides a contact form that forwards to the club's email, respectively.&nbsp;<br><br>When I became more comfortable with HTML and CSS, I recreated the website using Bootstrap Studio and created my own custom classes to modify the premade features offered. This website is an example of a website I made with the software.<br></p>
+                    <div class="py-4 card margined-small padded">
+                        <h4>Regular Expression Validation Bot<a href="https://github.com/meganmcadams/Discord-Verification-Bot" style="color: rgb(0,0,0);" target="_blank"><img src="{{ url_for('static', filename='assets/github.png') }}" class="icon-small" style="padding-left: 7px;"></i></a></h4><small>JavaScript</small>
+                        <p>For my clubs' communication channels, I coded a bot to handle the 
+                            verification of users. It is a UNT policy that official communication channels 
+                            must have each member's name set to their first and last name, so I set up the 
+                            group so that you must be verified to send messages.<br><br>The bot works by 
+                            waiting for the user to verify that they have read the rules before comparing the 
+                            user's nickname (or username if no nickname is set) to a regular expression that 
+                            checks if the user's nickname is a first name followed by a last initial. If it does not 
+                            match, it messages the user explaining that they did not update their nickname 
+                            accordingly and returns. If it does match, verifies the user and
+                            messages them with a success message.<br></p>
                     </div>
                 </div>
             </div>

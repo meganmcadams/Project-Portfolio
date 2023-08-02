@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="margined container-fluid navbar-left">
             <img class="padded-right" src="{{ url_for('static', filename='assets/logo.png') }}" height="25px" alt="navbar logo">
             <a class="navbar-brand" href="{{ url_for('page_index') }}">Megan McAdams</a>
@@ -47,6 +47,7 @@
         <div style="display: block ruby;">
             <a href="https://www.github.com/meganmcadams" target="_blank"><img src="{{ url_for('static', filename='assets/github.png') }}" style="width: 23px;margin-bottom: 12px;margin-right: 8px;margin-left: 8px;"></a>
             <a href="https://www.linkedin.com/in/megan-mcadams/" target="_blank"><img src="{{ url_for('static', filename='assets/linkedin.png') }}" style="width: 23px;margin-top: -13px;"></a>
+            <a href="mailto:contact@meganmcadams.com" target="_blank"><img src="{{ url_for('static', filename='assets/email.png') }}" style="width: 23px;margin-top: -13px; filter: brightness(1000%); margin-left: 8px;"></a>
         </div>
         <p class="mb-0 margined-bottom"><strong>Megan McAdams</strong><br>Email: contact@meganmcadams.com</p>
         <a class="btn secondary-btn fs-5 navBtn" role="button" href="#">Back to Top</a>

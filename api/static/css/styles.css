@@ -13,8 +13,8 @@
     --accent-blue: #5CB4BD;
     --accent-white: #F1F1F1;
 
-    --header-font: Copperplate, "Copperplate Gothic Light", fantasy;
-    --body-font: Perpetua;
+    --header-font: Cambria,Georgia,serif; 
+    --body-font: Cambria,Georgia,serif; 
 
     --text-colour: black;
     --card-background: white;
@@ -141,6 +141,9 @@ h1, h2, h3, h4, h5, h6, .header-font {
         width: 100%;
         margin-left: 0;
     }
+    .navbar-brand {
+        margin: auto;
+    }
 }
 
 @media (min-width: 992px) { /* Medium/Large Devices */
@@ -160,12 +163,6 @@ h1, h2, h3, h4, h5, h6, .header-font {
         padding-right: 3rem;
         z-index: -10;
         width: 100%;
-    }
-}
-
-@media (min-width: 1310px) { /* Large Devices */
-    .header {
-        text-align: left;
     }
 }
 
@@ -206,8 +203,16 @@ h1, h2, h3, h4, h5, h6, .header-font {
     display: flex;
     margin: auto;
 }
-.nav-tabs {
+.navbar {
     background-color: var(--primary-grey);
+}
+.navbar a {
+    color: var(--accent-white) !important;
+}
+.navbar a:hover {
+    filter: brightness(80%);
+    transition-property: filter;
+    transition-duration: 0.5s;
 }
 
 /* Carousel */
