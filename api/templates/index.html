@@ -1,0 +1,89 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="header-block-large">
+
+    <div>
+        <img src="{{ url_for('static', filename='assets/headshot.png') }}" height="200px">
+        <h1 class="text-center text-light"> Megan McAdams </h1>
+        <p class="text-center text-light">Problem Solver - Software Engineer - Student Leader</p>
+    </div>
+
+</div>
+
+<div class="margined content padded">
+    <button class="vertical-align btn primary-btn my-2 my-sm-0 login-button margined-bottom">Download Resume</button>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block" src="{{ url_for('static', filename='assets/GoldenEagleAward.jpg') }}" alt="First slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block" src="{{ url_for('static', filename='assets/GirlsSurgeIntoStem.jpg') }}" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+            <img class="d-block" src="{{ url_for('static', filename='assets/Student_Employee.jpg') }}" alt="Third slide">
+        </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="container h-100 position-relative" style="top:-50px;">
+        <div class="row gy-5 gy-lg-0 row-cols-1 row-cols-md-2 row-cols-lg-3">
+            <div class="col">
+                <div class="card">
+                    <div class="card-body pt-5 p-4">
+                        <h4 class="card-title">Golden Eagle Award</h4>
+                        <h6 class="text-muted card-subtitle mb-2">Spring 2023</h6>
+                        <p class="card-text">For my work as a student leader, I was awarded with the most prestigous award a University of North Texas student can achieve: the Golden Eagle Award.&nbsp;</p>
+                    </div>
+                    <div class="card-footer p-4 py-3"><a style="display:inline-flex;" href="{{ url_for('page_awards') }}">Learn more&nbsp;<svg style="margin: auto;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                    </svg></a></div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body pt-5 p-4">
+                        <h4 class="card-title">Outstanding Student Employee of the Year</h4>
+                        <h6 class="text-muted card-subtitle mb-2">Spring 2022</h6>
+                        <p class="card-text">In the Spring of 2022, I was awarded Outstanding Student Employee of the Year by UNT for my accomplishments with automating the tuition &amp; fee validation process for over half a billion dollars alongside other projects for UNT Student Accounting.</p>
+                    </div>
+                        <div class="card-footer p-4 py-3"><a style="display:inline-flex;" href="{{ url_for('page_awards') }}">Learn more&nbsp;<svg style="margin: auto;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                        </svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-body pt-5 p-4">
+                        <h4 class="card-title">Girls SURGE Into STEM</h4>
+                        <h6 class="text-muted card-subtitle mb-2">Summer 2021</h6>
+                        <p class="card-text">During the Summer of 2021, I was the secondary lead for a STEM camp for middle and high school girls. During this camp, they learned about various STEM careers, used design thinking to develop solutions, and learned about the use of VR in educational settings.</p>
+                    </div>
+                    <div class="card-footer p-4 py-3"><a style="display:inline-flex;" href="{{ url_for('page_professional_experience') }}">Learn more&nbsp;<svg style="margin: auto;" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-right">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"></path>
+                        </svg></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,225 @@
+:root {
+
+    --primary-red: #953130;
+    --primary-grey: #545454;
+    --primary-white: #F2F0EB;
+
+    --secondary-dark-red: #792322;
+    --secondary-red: #B26161;
+    --secondary-light-red: #CFA1A1;
+    --secondary-white: #FFFFFF;
+
+    --accent-dark-blue: #177E89;
+    --accent-blue: #5CB4BD;
+    --accent-white: #F1F1F1;
+
+    --header-font: Copperplate, "Copperplate Gothic Light", fantasy;
+    --body-font: Perpetua;
+
+    --text-colour: black;
+    --card-background: white;
+
+}
+
+/* Global */
+body, head, .body-font {
+    font-family: var(--body-font);
+}
+
+h1, h2, h3, h4, h5, h6, .header-font {
+    font-family: var(--header-font);
+    font-weight: 600;
+}
+
+/* Headers */
+.header {
+    color: var(--primary-red);
+    padding: 1rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.header-img-edit {
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-top: 30px;
+}
+
+.header-light {
+    color: var(--primary-white);
+    padding: 1rem;
+}
+
+.header-block-large {
+    background-color: var(--primary-red);
+    display: flex;
+    padding: 5rem;
+}
+.header-block-large div, img {
+    margin: auto;
+    display: grid;
+}
+.footer-block {
+    background-color: var(--primary-grey);
+    color: var(--primary-white);
+}
+
+/* Padding and Margins */
+
+.padded-header {
+    padding-top: 1.5rem;
+}
+
+.padded {
+    padding: 1rem;
+}
+.no-padded-top {
+    padding-top: 0 !important;
+}
+
+.margined-bottom {
+    margin-bottom: 1rem !important;
+}
+.not-margined-bottom {
+    margin-bottom: 0 !important;
+}
+.margined-small {
+    margin: 1rem;
+}
+
+.text-light {
+    color: white;
+}
+.text-light a {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.primary-btn {
+    background-color: var(--primary-red);
+    color: white !important; /* important to override <a> */
+}
+
+.secondary-btn {
+    background-color: var(--accent-white);
+    color: black;
+}
+
+.tertiary-btn {
+    background-color: var(--accent-dark-blue);
+    color: white;
+}
+
+.primary-btn, .secondary-btn, .tertiary-btn, .delete-btn {
+    transition-property: filter;
+    transition-duration: 0.5s;
+    border-radius: 10px;
+    border: none;
+}
+
+.primary-btn:hover, .tertiary-btn:hover, .delete-btn:hover {
+    filter: brightness(120%);
+}
+.secondary-btn:hover {
+    filter: brightness(80%);
+    color: black !important;
+}
+.primary-btn:hover, .secondary-btn:hover, .tertiary-btn:hover, .delete-btn:hover {
+    transition-property: filter;
+    transition-duration: 0.5s;
+}
+.icon-small {
+    display: inline;
+    height: 20px;
+    filter:brightness(0%);
+}
+
+/* Info Box and Media-Specific */
+@media (max-width: 991px) { /* Small Devices */
+    .content {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 992px) { /* Medium/Large Devices */
+    .bottom-border {
+        border-bottom: 1px solid black;
+        margin-bottom: 2rem;
+    }
+    .margined {
+        max-width: 80%;
+        margin-left: 10%;
+    }
+    .content {
+        background-color: white;
+        overflow: auto;
+        min-height: 93vh;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        z-index: -10;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1310px) { /* Large Devices */
+    .header {
+        text-align: left;
+    }
+}
+
+@media (max-width: 1309px) { /* Small/Medium Device - FONT SIZES */
+    h1 {
+        font-size: 50px;
+    }
+    h2 {
+        font-size: 48px;        
+    }
+    h3 {
+        font-size: 46px;
+    }
+    h4 {
+        font-size: 44px;
+    }
+    h5 {
+        font-size: 42px;
+    }
+    h6 {
+        font-size: 40px;
+    }
+    p, .btn, a, .search-bar, b, body, head, button {
+        font-size: 25px;
+    }
+}
+
+.no-margins {
+    margin: 0 !important;
+}
+
+/* Navbar */
+.padded-right {
+    padding-right: 0;
+    margin-right: 1rem;
+}
+.vertical-align {
+    display: flex;
+    margin: auto;
+}
+.nav-tabs {
+    background-color: var(--primary-grey);
+}
+
+/* Carousel */
+.carousel-item img {
+    height: 700px;
+    width: 100%;
+    object-fit: cover;
+}
+.fit-cover {
+    object-fit: cover;
+}
+.flex-box {
+    flex-basis: auto !important;
+    width: 400px;
+}
