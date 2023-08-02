@@ -22,7 +22,9 @@
         Junior in Computer Science, and Golden Eagle. 
     </div>
 
-    <button class="vertical-align btn primary-btn my-2 my-sm-0 login-button margined-bottom">Download Resume</button>
+    <form target="_blank" method="get" action="{{ url_for('static', filename='assets/McAdams, Megan - Resume.pdf') }}">
+        <button type="submit" class="vertical-align btn primary-btn my-2 my-sm-0 login-button margined-bottom">Download Resume</button>
+    </form>
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
