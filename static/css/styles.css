@@ -166,22 +166,22 @@ h1, h2, h3, h4, h5, h6, .header-font {
 
 @media (max-width: 1309px) { /* Small/Medium Device - FONT SIZES */
     h1 {
-        font-size: 50px;
+        font-size: 45px;
     }
     h2 {
-        font-size: 48px;        
+        font-size: 43px;        
     }
     h3 {
-        font-size: 46px;
+        font-size: 41px;
     }
     h4 {
-        font-size: 44px;
+        font-size: 39px;
     }
     h5 {
-        font-size: 42px;
+        font-size: 37px;
     }
     h6 {
-        font-size: 40px;
+        font-size: 35px;
     }
     p, .btn, a, .search-bar, b, body, head, button {
         font-size: 25px;
