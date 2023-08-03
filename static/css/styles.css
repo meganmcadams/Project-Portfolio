@@ -25,6 +25,10 @@
 body, head, .body-font {
     font-family: var(--body-font);
 }
+body {
+    min-height:100vh;
+    background-color: var(--primary-grey);
+}
 
 h1, h2, h3, h4, h5, h6, .header-font {
     font-family: var(--header-font);
@@ -142,15 +146,22 @@ h1, h2, h3, h4, h5, h6, .header-font {
 }
 
 .content {
-    padding-left: 3rem;
-    padding-right: 3rem;
     width: 100vw;
+    min-height: 100vh;
+    background-color: white;
+}
+.maxed-width {
+    max-width: 500px;
 }
 
 /* Info Box and Media-Specific */
 @media (max-width: 991px) { /* Small Devices */
     .navbar-brand {
         margin: auto;
+    }
+    .maxed-width {
+        max-width: 100%;
+        margin: auto !important;
     }
 }
 
