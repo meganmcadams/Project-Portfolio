@@ -94,9 +94,6 @@ h1, h2, h3, h4, h5, h6, .header-font {
 .margined-small {
     margin: 1rem;
 }
-.margined-small-col {
-    margin: 1rem 0 1rem 0;
-}
 
 .text-light {
     color: white;
@@ -206,8 +203,8 @@ h1, h2, h3, h4, h5, h6, .header-font {
     .icon-small {
         height: 40px;
     }
-    .margined-small, .margined-small-col {
-        margin: 0.5rem 0 0.5rem 0;
+    .margined-small {
+        margin: 0.5rem 0 0.5rem 0 !important;
     }
     
 }
