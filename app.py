@@ -22,9 +22,9 @@ def page_professional_experience():
     return render_template('professional_experience.html')
 
 # TESTING
-'''
+#'''
 if __name__ == '__main__':
     import os
     port = int(os.environ.get('PORT', 2020))
     app.run(debug=True, threaded=False, host='0.0.0.0', port=port)
-'''
+#'''

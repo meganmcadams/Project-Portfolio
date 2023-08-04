@@ -28,6 +28,8 @@ body, head, .body-font {
 body {
     min-height:100vh;
     background-color: var(--primary-grey);
+    width: 100vw;
+    overflow-x:hidden;
 }
 
 h1, h2, h3, h4, h5, h6, .header-font {
@@ -91,6 +93,9 @@ h1, h2, h3, h4, h5, h6, .header-font {
 }
 .margined-small {
     margin: 1rem;
+}
+.margined-small-col {
+    margin: 1rem 0 1rem 0;
 }
 
 .text-light {
@@ -201,9 +206,10 @@ h1, h2, h3, h4, h5, h6, .header-font {
     .icon-small {
         height: 40px;
     }
-    .margined-small {
+    .margined-small, .margined-small-col {
         margin: 0.5rem 0 0.5rem 0;
     }
+    
 }
 
 .no-margins {
@@ -243,4 +249,13 @@ h1, h2, h3, h4, h5, h6, .header-font {
 .flex-box {
     flex-basis: auto !important;
     width: 400px;
+}
+.flex-box-large {
+    flex-basis: auto !important;
+    width: 500px;
+}
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
